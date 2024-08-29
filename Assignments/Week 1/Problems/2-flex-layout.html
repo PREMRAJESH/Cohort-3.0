@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2-flex-layout.html</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 1200px;
+        display: flex;
+      }
+      .left {
+        /* width: 400px; */
+        background-color: red;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        /* width: 800px; */
+        background-color: blue;
+        display: flex;
+        flex-grow: 2;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="left">
+          <h1>Left</h1>
+        </div>
+        <div class="right">
+          <h1>Right</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
