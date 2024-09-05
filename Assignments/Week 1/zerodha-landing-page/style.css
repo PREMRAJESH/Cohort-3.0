@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-flow: row;
+}
+.box1 {
+}
+.nav-link {
+  list-style: none;
+}

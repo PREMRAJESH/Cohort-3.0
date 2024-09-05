@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+      }
+      .todo {
+        display: flex;
+        display: flex;
+        justify-content: flex-start;
+        place-items: center;
+        height: 600px;
+        width: 800px;
+        border: 2px solid yellow;
+        border-radius: 20px;
+        margin: 100px;
+        padding: 100px;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .todo h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo">
+        <h1>To-do List</h1>
+        <input type="text" id="todoInput" />
+        <button onclick="addtodo()">Add Todo</button>
+        <div class="todolist"></div>
+      </div>
+    </div>
+
+    <script>
+      let todos = [];
+
+      function addtodo() {
+        let input = document.querySelector("#todoInput").value;
+        if (input !== "") {
+          todos.push({ title: input });
+          render();
+        } else {
+          alert("Please enter something.");
+        }
+        // Clear the input field after adding
+        document.querySelector("#todoInput").value = "";
+      }
+      function edittodo() {}
+      function render() {
+        let todolist = document.querySelector(".todolist");
+        todolist.innerHTML = "";
+        todos.forEach((todo, index) => {
+          // Create a new h4 element for the todo
+          let todoElement = document.createElement("h4");
+          todoElement.innerHTML = todo.title;
+
+          // Create a delete button for each todo
+          let button = document.createElement("button");
+          button.textContent = "Delete";
+          button.onclick = function () {
+            deleteTodo(index);
+          };
+          let editbtn = document.createElement("button");
+          editbtn.textContent = "edit";
+          editbtn.onclick = function () {
+            edittodo(index);
+          };
+          todolist.classList;
+          todolist.appendChild(todoElement);
+          todolist.appendChild(button);
+          todolist.appendChild(editbtn);
+        });
+      }
+
+      function deleteTodo(index) {
+        todos.splice(index, 1);
+        render();
+      }
+    </script>
+  </body>
+</html>

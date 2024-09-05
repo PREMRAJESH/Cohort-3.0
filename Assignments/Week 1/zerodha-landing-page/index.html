@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Zerodha - Online stock trading at lowest prices from India's biggest stock
+      broker – Zerodha
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://zerodha.com/static/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="/Assignments/Week 1/zerodha-landing-page/style.css"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: white;
+      }
+      /* Add Flexbox styles for the navbar */
+      nav {
+        background-color: #fff;
+        padding: 15px 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      hr {
+        border: 0.1px solid gray;
+        opacity: 100%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+      }
+
+      .hero-container {
+        text-align: center;
+        padding: 60px 15px;
+      }
+
+      .hero img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      .hero-head h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .hero-head p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #555;
+      }
+
+      .hero-head button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .hero-head button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        .hero-head h1 {
+          font-size: 2rem;
+        }
+
+        .hero-head p {
+          font-size: 1rem;
+        }
+
+        .hero-head button {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+    <main>
+      <nav>
+        <div class="container">
+          <div class="column 5">
+            <img
+              src="https://zerodha.com/static/images/logo.svg"
+              alt=""
+              height="20px"
+            />
+          </div>
+          <div class="columns 7">
+            <ul>
+              <li class="nav-link">Signup</li>
+              <li class="nav-link">About</li>
+              <li class="nav-link">Product</li>
+              <li class="nav-link">Pricing</li>
+              <li class="nav-link">Support</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <div class="hero-container">
+        <div class="hero">
+          <img src="https://zerodha.com/static/images/landing.png" alt="" />
+          <div class="hero-head">
+            <h1>Invest in everything</h1>
+            <p>
+              Online platform to invest in stocks, derivatives, mutual funds,
+              ETFs, bonds, and more.
+            </p>
+            <button>Sign up for free</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
