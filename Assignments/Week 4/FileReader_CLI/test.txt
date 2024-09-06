@@ -1,1 +1,9 @@
-this is a cli based project
+Hello, this is a test file.
+It contains a few lines of text.
+Each line has some words and letters.
+Testing the CLI for counting words, lines, and letters!
+
+* To run the CLI, use the following commands:
+- node your-cli-file.js countWords test.txt
+- node your-cli-file.js countLines test.txt
+- node your-cli-file.js countLetters test.txt
