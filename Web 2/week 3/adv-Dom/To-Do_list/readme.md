@@ -10,7 +10,7 @@ Welcome to the To-Do List project! This project is a simple web-based applicatio
 
 ## Demo
 
-[![Watch the video](/Web%202/week3/adv-Dom/To-Do_list/assets/thumbnail.png)](/Web%202/week3/adv-Dom/To-Do_list/assets/todo.mp4)
+visit the demo [here](https://prem-bhatt.github.io/To-Do-List-Project/)
 
 ## Usage
 
