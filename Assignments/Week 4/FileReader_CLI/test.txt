@@ -4,6 +4,6 @@ Each line has some words and letters.
 Testing the CLI for counting words, lines, and letters!
 
 * To run the CLI, use the following commands:
-- node your-cli-file.js countWords test.txt
-- node your-cli-file.js countLines test.txt
-- node your-cli-file.js countLetters test.txt
+  node Cli.js countWords test.txt
+  node Cli.js countLines test.txt
+  node Cli.js countLetters test.txt

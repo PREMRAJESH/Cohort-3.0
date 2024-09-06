@@ -20,7 +20,7 @@ program
         console.log(err);
       } else {
         const words = data.split(" ").length;
-        console.log(`There are ${words} in this file ${file}`);
+        console.log(`There are ${words} words in this file ${file}`);
       }
     });
   });
@@ -36,7 +36,7 @@ program
         console.log(err);
       } else {
         const line = data.split("\n").length;
-        console.log(`There are ${line} in this file ${file}`);
+        console.log(`There are ${line} lines in this file ${file}`);
       }
     });
   });
@@ -58,7 +58,7 @@ program
             letterCount++;
           }
         }
-        console.log(`There are ${letterCount} in this file ${file}`);
+        console.log(`There are ${letterCount} letters in this file ${file}`);
       }
     });
   });
